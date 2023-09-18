@@ -1,175 +1,3 @@
-<!-- <template>
-  <div class="carousel">
-    <div v-for="(item, index) in items" :key="index" class="carousel-item">
-      <img :src="item.img" alt="Carousel Item" />
-    </div>
-  </div>
-</template>
-  
-<script setup>
-import { reactive } from 'vue';
-import { mainData } from '../data.js';
-
-const items = reactive(mainData.carousel);
-</script>
-  
-  <style scoped>
-  .carousel {
-  display: flex;
-  width: 100%;
-}
-
-.carousel-item {
-  flex: 0 0 100%;
-  transition: transform 0.5s;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-  </style> -->
-
-
-
-
-
-
-
-
-
-
-
-  <!-- <template>
-    <div id="carouselExample" class="carousel slide">
-      <div class="carousel-inner">
-        <div v-for="(item, index) in carouselItems" :key="index" :class="['carousel-item', { 'active': index === 0 }]">
-          <img :src="item.src" class="d-block w-100" :alt="'Image ' + (index + 1)">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev" @click="prevSlide">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next" @click="nextSlide">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </template>
-  
-  <script setup>
-
-  import {ref} from 'vue';
-  const carouselItems = [
-    { src: '/src/assets/img/apartament1.jpg' },
-    { src: '/src/assets/img/apartment3.jpg' },
-    { src: '/src/assets/img/apartment2.jpg' }
-  ];
-  
-  const currentIndex = ref(0);
-  
-  const nextSlide = () => {
-    currentIndex.value = (currentIndex.value + 1) % carouselItems.length;
-  };
-  
-  const prevSlide = () => {
-    currentIndex.value = (currentIndex.value - 1 + carouselItems.length) % carouselItems.length;
-  };
-  </script>
-
-
-<style scoped>
-</style> -->
-
-
-
-
-
-
-
-
-<!-- <template>
-  <div class="carousel">
-    <div :style="{ transform: `translateX(-${currentIndex * 100}%)` }" class="carousel-inner">
-      <div v-for="(item, index) in carouselItems" :key="index" class="carousel-item">
-        <img :src="item.src"  class="d-block w-100" alt="Carousel Item" />
-      </div>
-    </div>
-    <button @click="prevSlide" class="carousel-control-prev">&lt;</button>
-    <button @click="nextSlide" class="carousel-control-next">&gt;</button>
-  </div>
-</template>
-
-<script setup>
-import { ref } from 'vue';
-
-const carouselItems = [
-  { src: '/src/assets/img/apartament1.jpg' },
-  { src: '/src/assets/img/apartment2.jpg' },
-  { src: '/src/assets/img/apartment3.jpg' }
-];
-
-const currentIndex = ref(0);
-
-const nextSlide = () => {
-  currentIndex.value = (currentIndex.value + 1) % carouselItems.length;
-};
-
-const prevSlide = () => {
-  currentIndex.value = (currentIndex.value - 1 + carouselItems.length) % carouselItems.length;
-};
-</script>
-
-<style scoped>
-.carousel {
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s;
-}
-
-.carousel-item {
-  flex: 0 0 100%;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.carousel-control-prev {
-  left: 10px;
-}
-
-.carousel-control-next {
-  right: 10px;
-}
-</style> -->
-
-
-
-
-
-
-
-
 
 
 <template>
@@ -183,14 +11,14 @@ const prevSlide = () => {
           :src="item.src" 
           class="d-block w-100" 
           :alt="'Image ' + (index + 1)"
-          style=" object-fit: cover;">
+          style=" object-fit: cover; opacity: 1; transition: opacity 1s;">
       </div>
     </div>
-    <button class="carousel-control-prev btn" type="button" @click="prevSlide">
+    <button class="carousel-control-prev btn" type="button" @click="prevSlide"  > 
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next btn" type="button" @click="nextSlide">
+    <button class="carousel-control-next btn" type="button" @click="nextSlide"> 
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
@@ -201,8 +29,8 @@ const prevSlide = () => {
 import { ref } from 'vue';
 
 const carouselItems = [
-  { src: '/src/assets/img/apartament1.jpg' },
-  { src: '/src/assets/img/apartment3.jpg' },
+  { src: '/src/assets/img/carousel-1.jpg' },
+  { src: '/src/assets/img/carousel-2.jpg' },
   { src: '/src/assets/img/apartment2.jpg' }
 ];
 
@@ -225,24 +53,33 @@ const prevSlide = () => {
 
 .carousel-inner {
   display: flex;
-  transition: transform 0.5s;
+  transition: transform 0.1s ease-in-out;
+  overflow: hidden;
+  /* width: 100%; */
 }
 
 .carousel-item {
   flex: 0 0 100%;
+  /* width: 100%; */
+  /* opacity: 0;
+  transition: opacity 0.2s; */
 }
 
 .carousel-item img {
   width: 100%;
   height: 100vh;
-
+  object-fit: cover;
+  /* position: relative;
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.5s ease-in-out; */
 }
 
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
   font-size: 24px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -258,6 +95,37 @@ const prevSlide = () => {
 .carousel-control-next {
   right: 10px;
 }
+
+.carousel-item.active {
+  transform: translateX(0); /* Смещение для активного слайда */
+}
+
+.carousel-item.prev {
+  transform: translateX(-100%); /* Смещение для предыдущего слайда */
+}
+
+.carousel-item.next {
+  transform: translateX(100%); /* Смещение для следующего слайда */
+}
+
+.btn {
+    transition: .3s;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+    border-radius: 50px;
+    background: rgb(68, 68, 205);
+    opacity:60%;
+}
+
+.btn:hover {
+  opacity: 90%;
+}
+
 
 @media (max-width: 767px) {
   /* Применяем стили для мобильной версии (ширина экрана менее 768px) */
