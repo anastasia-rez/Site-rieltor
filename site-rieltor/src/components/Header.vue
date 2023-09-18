@@ -3,7 +3,7 @@ import Carousel from './Carousel.vue'; // Импортируем компоне�
 </script>
 
 <template>
-  <div class="container-fluid header bg-white p-0 ">
+  <div class="container-fluid header bg-white p-0">
     <div class="row g-0 align-items-center  flex-column-reverse flex-md-row">
       <div class="col-md-6 p-5 mt-lg-5">
         <h1 class="display-5 animated fadeIn mb-4 fw-bold">Шукайте <span class="text-primary">ідеальне житло </span> своєї мрії</h1>
