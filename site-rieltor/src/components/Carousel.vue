@@ -1,4 +1,22 @@
+<script setup>
+import { ref } from 'vue';
 
+const carouselItems = [
+  { src: '/src/assets/img/carousel-1.jpg' },
+  { src: '/src/assets/img/carousel-2.jpg' },
+  { src: '/src/assets/img/apartment2.jpg' }
+];
+
+const currentIndex = ref(0);
+
+const nextSlide = () => {
+  currentIndex.value = (currentIndex.value + 1) % carouselItems.length;
+};
+
+const prevSlide = () => {
+  currentIndex.value = (currentIndex.value - 1 + carouselItems.length) % carouselItems.length;
+};
+</script>
 
 <template>
   <div id="carouselExample" class="carousel slide">
@@ -25,25 +43,7 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
 
-const carouselItems = [
-  { src: '/src/assets/img/carousel-1.jpg' },
-  { src: '/src/assets/img/carousel-2.jpg' },
-  { src: '/src/assets/img/apartment2.jpg' }
-];
-
-const currentIndex = ref(0);
-
-const nextSlide = () => {
-  currentIndex.value = (currentIndex.value + 1) % carouselItems.length;
-};
-
-const prevSlide = () => {
-  currentIndex.value = (currentIndex.value - 1 + carouselItems.length) % carouselItems.length;
-};
-</script>
 
 <style scoped>
 .carousel {
@@ -58,22 +58,6 @@ const prevSlide = () => {
   /* width: 100%; */
 }
 
-.carousel-item {
-  flex: 0 0 100%;
-  /* width: 100%; */
-  /* opacity: 0;
-  transition: opacity 0.2s; */
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  /* position: relative;
-  transform: translateX(0);
-  opacity: 1;
-  transition: transform 0.5s ease-in-out; */
-}
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -96,17 +80,6 @@ const prevSlide = () => {
   right: 10px;
 }
 
-.carousel-item.active {
-  transform: translateX(0); /* Смещение для активного слайда */
-}
-
-.carousel-item.prev {
-  transform: translateX(-100%); /* Смещение для предыдущего слайда */
-}
-
-.carousel-item.next {
-  transform: translateX(100%); /* Смещение для следующего слайда */
-}
 
 .btn {
     transition: .3s;

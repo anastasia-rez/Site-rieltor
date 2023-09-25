@@ -112,12 +112,43 @@ const mainData = reactive ({
 
     {
       img: '../src/assets/img/team-4.jpg',
-      name: 'Name',
+      name: 'Name1',
       position: 'Realtor',
       tel: +380660000000,
       linkInstagram: 'https://www.instagram.com/',
       linkYouTube: '',
       linkFb: ''
+    }
+
+  ],
+
+  reviews : [
+    {
+      img: '../src/assets/img/testimonial-1.jpg',
+      name: 'Name',
+      service: 'Продаж квартири',
+      review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit penatibus fermentum, proin dapibus condimentum et a montes mattis dui. Integer lobortis tellus taciti facilisi nibhю'
+    },
+
+    {
+      img: '../src/assets/img/testimonial-2.jpg',
+      name: 'Name1',
+      service: 'Купівля квартири',
+      review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nunc habitant vivamus, hendrerit enim condimentum dictumst nisi cubilia tincidunt.'
+    },
+
+    {
+      img: '../src/assets/img/testimonial-3.jpg',
+      name: 'Name2',
+      service: 'Аренда квартири',
+      review: 'Lorem ipsum dolor sit amet consectetur, adipiscing elit viverra ridiculus, eros nunc quam commodo. '
+    },
+
+    {
+      img: '../src/assets/img/testimonial-4.jpg',
+      name: 'Name3',
+      service: 'Аренда квартири',
+      review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi habitasse, fames ex ut penatibus eu aenean est quisque, urna id velit malesuada tristique primis nam magna.'
     }
 
   ]

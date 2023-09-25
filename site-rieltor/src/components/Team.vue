@@ -46,7 +46,6 @@ const props = defineProps(['team']);
 }
 
 
-
 .fa-phone-alt:hover {
     transform: scale(1.4); /* Измените масштаб на ваш выбор */
     transition: transform 0.3s ease-in-out; /* Добавьте плавный переход */
