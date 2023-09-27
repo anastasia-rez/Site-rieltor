@@ -47,15 +47,26 @@ const prevSlide = () => {
 
 <style scoped>
 .carousel {
-  position: relative;
   overflow: hidden;
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  height: 100%;
+}
+
+.carousel-inner img {
+    width: 100%; 
+  height: 700px;
+  object-fit: contain;
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 .carousel-inner {
   display: flex;
   transition: transform 0.1s ease-in-out;
   overflow: hidden;
-  /* width: 100%; */
+  height: 100%;
 }
 
 
@@ -63,7 +74,6 @@ const prevSlide = () => {
 .carousel-control-next {
   position: absolute;
   top: 50%;
-  /* transform: translateY(-50%); */
   font-size: 24px;
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -79,7 +89,6 @@ const prevSlide = () => {
 .carousel-control-next {
   right: 10px;
 }
-
 
 .btn {
     transition: .3s;
@@ -102,12 +111,19 @@ const prevSlide = () => {
 
 @media (max-width: 767px) {
   /* Применяем стили для мобильной версии (ширина экрана менее 768px) */
-  .carousel-inner img {
-    width: 100%;
-    height: 400px;
+
+  .carousel {
+    width: 100%; 
+    max-height: 450px;
   }
+
+  .carousel-inner img {
+  height: 450px;
+  max-height: none; /* Отменяем максимальную высоту для мобильной версии */
+  object-fit: contain;
+  }
+
 }
 
 
 </style> 
-
