@@ -13,7 +13,7 @@
                     <p><i class="fa fa-check text-primary me-3"></i>Великий вибір пропозицій</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Профейсійні фахівці</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Честність та бажання допомогти</p>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Наш телеграм канал</a>
+                    <a class="btn py-3 px-5 mt-3" href="">Наш телеграм канал</a>
                 </div>
             </div>
         </div>
@@ -21,6 +21,8 @@
 </template>
 
 <style scoped>
+
+
 .about-img img {
     position: relative;
     z-index: 2;
@@ -33,8 +35,13 @@
     left: -50%;
     width: 100%;
     height: 100%;
-    background: rgb(72, 72, 173);
+    background:  rgb(68, 68, 205);
     transform: skew(20deg);
     z-index: 1;
+}
+
+.btn {
+    color: white;
+    background-color:  rgb(68, 68, 205);
 }
 </style>

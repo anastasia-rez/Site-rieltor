@@ -7,9 +7,9 @@ import Carousel from './Carousel.vue';
   <div class="container-fluid header bg-white p-0" >
     <div class="row g-0 align-items-center  flex-column-reverse flex-md-row">
       <div class="col-md-6 p-5 mt-lg-5">
-        <h1 class="display-5 animated fadeIn mb-4 fw-bold">Шукайте <span class="text-primary">ідеальне житло </span> своєї мрії</h1>
-        <p class="animated fadeIn mb-4 pb-2">Наші професіонали допоможуть Вам у будь-якому питанні!</p>
-        <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Наш телеграм канал</a>
+        <h1 class="display-5 animated fadeIn mb-4 fw-bold">Шукайте <span class="text">ідеальне житло </span> своєї мрії</h1>
+        <p class="animated fadeIn mb-4 pb-2 opacity-75">Наші професіонали допоможуть Вам у будь-якому питанні!</p>
+        <a href="" class="btn py-3 px-5 me-3 animated fadeIn text-light">Наш телеграм канал</a>
       </div>
       <div class="col-md-6 animated fadeIn carousel-container">
         <Carousel /> 
@@ -19,6 +19,16 @@ import Carousel from './Carousel.vue';
 </template> 
 
 <style scoped>
+
+.text {
+  
+  color: rgb(49, 49, 181);
+  
+}
+
+.btn {
+  background-color: rgb(65, 65, 199);
+}
 .header {
   position: relative;
   background-color: transparent;

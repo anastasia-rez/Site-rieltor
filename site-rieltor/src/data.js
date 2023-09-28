@@ -18,7 +18,7 @@ const mainData = reactive ({
       img: '../src/assets/img/apartment2.jpg',
       type: 'Купівля',
       type2: 'Квартира',
-      price: '30000$',
+      price: '30 000$',
       rooms: 2,
       bathroom: 1,
       area: '45м²',
@@ -29,8 +29,8 @@ const mainData = reactive ({
     {
       img: '../src/assets/img/apartment3.jpg',
       type: 'Купівля',
-      type2: 'Домівка',
-      price: '39000$',
+      type2: 'Будинок',
+      price: '39 000$',
       rooms: 3,
       bathroom: 2,
       area: '54м²',
@@ -42,7 +42,7 @@ const mainData = reactive ({
       img: '../src/assets/img/apartment4.jpg',
       type: 'Купівля',
       type2: 'Офіс',
-      price: '70000$',
+      price: '70 000$',
       bathroom: 1,
       rooms: 5,
       area: '70м²',
@@ -54,7 +54,7 @@ const mainData = reactive ({
       img: '../src/assets/img/property-1.jpg',
       type: 'Оренда',
       type2: 'Квартира',
-      price: '123000$',
+      price: '123 000$',
       bathroom: 3,
       rooms: 5,
       area: '115м²',
@@ -66,7 +66,7 @@ const mainData = reactive ({
       img: '../src/assets/img/property-2.jpg',
       type: 'Купівля',
       type2: 'Офіс',
-      price: '70000$',
+      price: '70 000$',
       bathroom: 1,
       rooms: 3,
       area: '80м²',
@@ -127,7 +127,7 @@ const mainData = reactive ({
       img: '../src/assets/img/testimonial-1.jpg',
       name: 'Name',
       service: 'Продаж квартири',
-      review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit penatibus fermentum, proin dapibus condimentum et a montes mattis dui. Integer lobortis tellus taciti facilisi nibhю'
+      review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit penatibus fermentum, proin dapibus condimentum et a montes mattis dui. Integer lobortis tellus taciti facilisi nibhю.Lorem ipsum dolor sit amet consectetur adipiscing elit penatibus fermentum, proin dapibus condimentum et a montes mattis dui. Integer lobortis tellus taciti facilisi nibhю.'
     },
 
     {
@@ -141,14 +141,14 @@ const mainData = reactive ({
       img: '../src/assets/img/testimonial-3.jpg',
       name: 'Name2',
       service: 'Аренда квартири',
-      review: 'Lorem ipsum dolor sit amet consectetur, adipiscing elit viverra ridiculus, eros nunc quam commodo. '
+      review: 'Lorem ipsum dolor sit amet consectetur, adipiscing elit viverra ridiculus, eros nunc quam commodo. Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nun'
     },
 
     {
       img: '../src/assets/img/testimonial-4.jpg',
       name: 'Name3',
       service: 'Аренда квартири',
-      review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi habitasse, fames ex ut penatibus eu aenean est quisque, urna id velit malesuada tristique primis nam magna.'
+      review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi habitasse, fames ex ut penatibus eu aenean est quisque, urna id velit malesuada tristique primis nam magna. Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nun'
     }
 
   ]

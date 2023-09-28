@@ -28,7 +28,7 @@ import Footer from './components/Footer.vue';
 </script>
 
 <template>
-  <div class="container-main">
+  <div class="container-main" id="app">
     <div class="container pt-3 min-vh-100 d-flex flex-column bg-white p-0">
       <div style="position: sticky; top: 0; z-index: 1000;">
         <Navbar></Navbar>
@@ -41,8 +41,6 @@ import Footer from './components/Footer.vue';
 
         <Search></Search>
 
-        <Category></Category>
-
         <About></About>
 
         <!-- Property List Start -->
@@ -54,7 +52,7 @@ import Footer from './components/Footer.vue';
             <div class="row g-0 gx-5 align-items-end">
               <div class="col-lg-6">
                 <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                  <h1 class="mb-3">Наші варіати</h1>
+                  <h1 class="mb-3">Наші варіанти</h1>
                   <p>Оберіть варіант, який вам сподобався та зв'яжіться з нашими фахівцями</p>
                 </div>
               </div>
@@ -62,13 +60,13 @@ import Footer from './components/Footer.vue';
               <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
                 <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
                   <li class="nav-item me-2">
-                      <a class="btn btn-outline-primary active" data-bs-toggle="pill" href="#tab-1">Всі</a>
+                      <a class="btn active" data-bs-toggle="pill" href="#tab-1">Всі</a>
                   </li>
                   <li class="nav-item me-2">
-                      <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">Продаж</a>
+                      <a class="btn " data-bs-toggle="pill" href="#tab-2">Купівля</a>
                   </li>
                   <li class="nav-item me-0">
-                      <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">Оренда</a>
+                      <a class="btn" data-bs-toggle="pill" href="#tab-3">Оренда</a>
                   </li>
                 </ul>
               </div>
@@ -83,7 +81,35 @@ import Footer from './components/Footer.vue';
 
         <!-- Property List End -->
 
+        <Category></Category>
+
         <Action></Action>
+
+        
+
+        <!-- Reviews start -->
+
+        <div class="container-xxl py-5">
+          <div class="container">
+            
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="mb-3">Відгуки наших клієнтів</h1>
+                <p>Ми завжди радіємо Вашим відгукам!</p>
+            </div>
+
+            <!-- <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s"> -->
+
+                <!-- <Reviews v-for="item in mainData.reviews" :reviews="item"></Reviews> -->
+
+                <Reviews :reviews="mainData.reviews" />
+
+            
+          </div>
+
+        </div>
+      
+
+        <!-- Reviews end -->
 
         <!-- Team Start -->
 
@@ -102,31 +128,6 @@ import Footer from './components/Footer.vue';
         </div> 
 
         <!-- Team End -->
-
-        <!-- Reviews start -->
-
-        <div class="container-xxl py-5">
-          <div class="container">
-            
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="mb-3">Відгуки наших клієнтів</h1>
-                <p>Ми завжди радіємо Вашим відгукам!</p>
-            </div>
-
-            <!-- <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s"> -->
-
-                <!-- <Reviews v-for="item in mainData.reviews" :reviews="item"></Reviews> -->
-
-                <Reviews :reviews="mainData.reviews"></Reviews>
-
-              
-            
-          </div>
-
-        </div>
-      
-
-        <!-- Reviews end -->
         
       </main>
 
@@ -144,6 +145,16 @@ import Footer from './components/Footer.vue';
 .container-main{
   background-color: rgb(190, 190, 223, 0.2);
   font-family: 'Inter', sans-serif;
+}
+
+.btn {
+  border: 1px solid rgb(68, 68, 205);
+  color: blue;
+}
+
+.btn:hover {
+  background-color: rgb(68, 68, 205);
+  color: white;
 }
 </style>
 

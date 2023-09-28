@@ -1,5 +1,5 @@
 <template>
-    <div class="container-xxl py-5">
+    <div id="contact" class="container-xxl py-5">
         <div class="container">
             <div class="bg-light rounded p-3">
                 <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">

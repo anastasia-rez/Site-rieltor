@@ -5,7 +5,7 @@ const props = defineProps(['team']);
 </script>
 
 <template>
-    <div class="team-item col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+    <div id="team" class="team-item col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
         <div class="rounded overflow-hidden">
         <div class="position-relative">
             <img class="img-fluid" :src="team.img" alt="">

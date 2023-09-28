@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
+
 const isSticky = ref(false);
 
 const handleScroll = () => {
@@ -34,24 +35,24 @@ const handleScroll = () => {
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto text-center">
 
-                    <div class="nav-item dropdown ">
-                        <a href="testimonial.html" class="nav-link fw-semibold " data-bs-toggle="dropdown">Головна</a>
+                    <div class="nav-item dropdown item-main">
+                        <a href="#app" class="nav-link fw-bold ">Головна</a>
                     </div>
 
                     <div class="nav-item dropdown">
-                        <a href="#about" class="nav-link" data-bs-toggle="dropdown">Про нас</a>
+                        <a href="#about" class="nav-link  " >Про нас</a>
                     </div>
                     
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link" data-bs-toggle="dropdown">Наші варіанти</a>
+                        <a href="#property" class="nav-link" >Наші варіанти</a>
                     </div>
 
                     <div class="nav-item dropdown">
-                        <a href="testimonial.html" class="nav-link" data-bs-toggle="dropdown">Відгуки</a>
+                        <a href="#contact" class="nav-link" >Контакти</a>
                     </div>
 
                     <div class="nav-item dropdown">
-                        <a href="testimonial.html" class="nav-link" data-bs-toggle="dropdown">Контакти</a>
+                        <a href="#team" class="nav-link">Наші фахівці</a>
                     </div>
 
                 </div>
@@ -64,6 +65,10 @@ const handleScroll = () => {
 <style scoped>
 
 h1 {
+    color: rgb(49, 49, 181);
+}
+
+.item-main {
     color: rgb(49, 49, 181);
 }
 

@@ -100,7 +100,7 @@ const prevSlide = () => {
     justify-content: center;
     font-weight: normal;
     border-radius: 50px;
-    background: rgb(68, 68, 205);
+    background: rgb(49, 49, 181);
     opacity:60%;
 }
 
