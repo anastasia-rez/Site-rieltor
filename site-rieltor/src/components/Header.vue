@@ -1,5 +1,9 @@
  <script setup>
 import Carousel from './Carousel.vue';
+
+const props = defineProps({
+  carouselItems: Array, // Объявляем ожидаемый тип для carouselItems
+});
 </script>
 
 
@@ -12,7 +16,8 @@ import Carousel from './Carousel.vue';
         <a href="" class="btn py-3 px-5 me-3 animated fadeIn text-light">Наш телеграм канал</a>
       </div>
       <div class="col-md-6 animated fadeIn carousel-container">
-        <Carousel /> 
+        <!-- <Carousel />  -->
+        <Carousel :carouselItems="carouselItems" />
       </div>
     </div>
   </div>

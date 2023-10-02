@@ -6,9 +6,9 @@ const props = defineProps(['team']);
 
 <template>
     <div id="team" class="team-item col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="rounded overflow-hidden">
-        <div class="position-relative">
-            <img class="img-fluid" :src="team.img" alt="">
+        <div class="rounded overflow-hidden ">
+        <div class="position-relative ">
+            <img class="img-fluid w-100" :src="team.img" alt="">
             <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                 <a class="btn btn-square mx-1" :href="team.linkFb"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-square mx-1" :href="team.linkYouTube"><i class="fab fa-youtube"></i></a>
@@ -42,13 +42,14 @@ const props = defineProps(['team']);
 
 .team-item .btn:hover {
     color: #ffffffc9;
-    background: rgb(100, 9, 221);
+    background: rgb(68, 68, 205);
 }
 
 
 .fa-phone-alt:hover {
-    transform: scale(1.4); /* Измените масштаб на ваш выбор */
+    transform: scale(1.6); /* Измените масштаб на ваш выбор */
     transition: transform 0.3s ease-in-out; /* Добавьте плавный переход */
-    color: rgb(110, 34, 176);
+    color: rgb(68, 68, 205);
 }
+
 </style>

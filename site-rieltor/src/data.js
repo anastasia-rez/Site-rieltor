@@ -3,7 +3,11 @@ import {ref, reactive, computed} from 'vue';
 const mainData = reactive ({
   products: [
     {
-      img: '../src/assets/img/apartament1.jpg',
+      photos: [
+        '../src/assets/img/apartament1.jpg',
+        '../src/assets/img/apartment2.jpg',
+        '../src/assets/img/apartment3.jpg',
+      ],
       type: 'Оренда',
       type2: 'Квартира',
       price: '300$',
@@ -15,7 +19,11 @@ const mainData = reactive ({
     },
 
     {
-      img: '../src/assets/img/apartment2.jpg',
+      photos: [
+        '../src/assets/img/apartment2.jpg',
+        '../src/assets/img/apartament1.jpg',
+        '../src/assets/img/apartment3.jpg',
+      ],
       type: 'Купівля',
       type2: 'Квартира',
       price: '30 000$',
@@ -27,7 +35,11 @@ const mainData = reactive ({
     },
 
     {
-      img: '../src/assets/img/apartment3.jpg',
+      photos: [
+        '../src/assets/img/apartment3.jpg',
+        '../src/assets/img/apartment2.jpg',
+        '../src/assets/img/apartament1.jpg',
+      ],
       type: 'Купівля',
       type2: 'Будинок',
       price: '39 000$',
@@ -39,7 +51,11 @@ const mainData = reactive ({
     },
 
     {
-      img: '../src/assets/img/apartment4.jpg',
+      photos: [
+        '../src/assets/img/apartment3.jpg',
+        '../src/assets/img/apartment2.jpg',
+        '../src/assets/img/apartment1.jpg',
+      ],
       type: 'Купівля',
       type2: 'Офіс',
       price: '70 000$',
@@ -51,7 +67,11 @@ const mainData = reactive ({
     },
 
     {
-      img: '../src/assets/img/property-1.jpg',
+      photos: [
+        '../src/assets/img/apartment2.jpg',
+        '../src/assets/img/apartament1.jpg',
+        '../src/assets/img/apartment3.jpg',
+      ],
       type: 'Оренда',
       type2: 'Квартира',
       price: '123 000$',
@@ -63,7 +83,11 @@ const mainData = reactive ({
     },
 
     {
-      img: '../src/assets/img/property-2.jpg',
+      photos: [
+        '../src/assets/img/apartament1.jpg',
+        '../src/assets/img/apartment2.jpg',
+        '../src/assets/img/apartment3.jpg',
+      ],
       type: 'Купівля',
       type2: 'Офіс',
       price: '70 000$',

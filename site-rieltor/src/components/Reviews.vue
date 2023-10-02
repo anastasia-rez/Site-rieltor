@@ -178,14 +178,14 @@ onUnmounted(() => {
 
 
 .fixed-card-height {
-  width: 500px;
+  width: 450px;
   height: 280px; /* Высота карточки на десктопе и мобильных устройствах */
   /* max-height: 450px; */
-  border: 2px dotted rgb(28, 92, 113);
+  border: 2px dotted rgb(43, 43, 164);
   margin: auto;
 }
 .btn {
-  background-color: rgb(34, 98, 98);
+  background-color: rgb(68, 68, 205);
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -204,7 +204,7 @@ onUnmounted(() => {
 }
 
 .testimonial-item {
-  background-color: rgba(112, 112, 197, 0.5);
+  background-color: rgba(131, 131, 198, 0.5);
 }
 
 

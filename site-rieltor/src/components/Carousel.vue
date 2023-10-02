@@ -1,13 +1,39 @@
-<script setup>
-import { ref } from 'vue';
 
-const carouselItems = [
-  { src: '/src/assets/img/carousel-1.jpg' },
-  { src: '/src/assets/img/carousel-2.jpg' },
-  { src: '/src/assets/img/apartment2.jpg' }
-];
+
+ <template>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div
+        v-for="(item, index) in carouselItems"
+        :key="index"
+        :class="['carousel-item', { 'active': index === currentIndex }]"
+      >
+        <img
+          :src="item.src"
+          class="d-block w-100"
+          :alt="'Image ' + (index + 1)"
+          style=" object-fit: cover; opacity: 1; transition: opacity 1s;"
+        />
+      </div>
+    </div>
+    <button class="carousel-control-prev btn" type="button" @click="prevSlide">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next btn" type="button" @click="nextSlide">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</template>
+
+<script setup>
+import { ref, defineProps, onMounted, onUnmounted } from 'vue';
+
+const { carouselItems } = defineProps(['carouselItems']);
 
 const currentIndex = ref(0);
+let intervalId = null; // Переменная для хранения ID интервала
 
 const nextSlide = () => {
   currentIndex.value = (currentIndex.value + 1) % carouselItems.length;
@@ -16,32 +42,24 @@ const nextSlide = () => {
 const prevSlide = () => {
   currentIndex.value = (currentIndex.value - 1 + carouselItems.length) % carouselItems.length;
 };
-</script>
 
-<template>
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div 
-        v-for="(item, index) in carouselItems" 
-        :key="index" 
-        :class="['carousel-item', { 'active': index === currentIndex }]">
-        <img 
-          :src="item.src" 
-          class="d-block w-100" 
-          :alt="'Image ' + (index + 1)"
-          style=" object-fit: cover; opacity: 1; transition: opacity 1s;">
-      </div>
-    </div>
-    <button class="carousel-control-prev btn" type="button" @click="prevSlide"  > 
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next btn" type="button" @click="nextSlide"> 
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
-</template>
+// Функция для автоматической смены слайдов каждые 5 секунд
+const startAutoSlide = () => {
+  intervalId = setInterval(() => {
+    nextSlide();
+  }, 3000); // Интервал в миллисекундах (5 секунд)
+};
+
+// Запускаем автоматическую смену слайдов при монтировании компонента
+onMounted(() => {
+  startAutoSlide();
+});
+
+// Останавливаем автоматическую смену слайдов при размонтировании компонента
+onUnmounted(() => {
+  clearInterval(intervalId);
+});
+</script>
 
 
 
@@ -108,6 +126,10 @@ const prevSlide = () => {
   opacity: 90%;
 }
 
+/* .carousel-inner {
+  transition: transform 1s ease; 
+} */
+
 
 @media (max-width: 767px) {
   /* Применяем стили для мобильной версии (ширина экрана менее 768px) */
@@ -126,4 +148,4 @@ const prevSlide = () => {
 }
 
 
-</style> 
+</style>

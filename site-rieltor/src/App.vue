@@ -20,7 +20,11 @@ import Team from './components/Team.vue';
 
 import Reviews from './components/Reviews.vue';
 
-const carouselItems = mainData.carousel;
+const carouselItems = [
+  { src: '/src/assets/img/carousel-1.jpg' },
+  { src: '/src/assets/img/carousel-2.jpg' },
+  { src: '/src/assets/img/apartment2.jpg' }
+];
 
 import Footer from './components/Footer.vue';
 
@@ -37,6 +41,7 @@ import Footer from './components/Footer.vue';
         <Header :carouselItems="carouselItems" />
       </header>
 
+
       <main class="row flex-grow-1 mt-3">
 
         <Search></Search>
@@ -52,7 +57,7 @@ import Footer from './components/Footer.vue';
             <div class="row g-0 gx-5 align-items-end">
               <div class="col-lg-6">
                 <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                  <h1 class="mb-3">Наші варіанти</h1>
+                  <h1 class="mb-3">Наші найкращі варіанти</h1>
                   <p>Оберіть варіант, який вам сподобався та зв'яжіться з нашими фахівцями</p>
                 </div>
               </div>
@@ -93,7 +98,7 @@ import Footer from './components/Footer.vue';
           <div class="container">
             
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="mb-3">Відгуки наших клієнтів</h1>
+                <h1 class="mb-3 fw-semibold">Відгуки наших клієнтів</h1>
                 <p>Ми завжди радіємо Вашим відгукам!</p>
             </div>
 
@@ -116,7 +121,7 @@ import Footer from './components/Footer.vue';
         <div class="container-xxl py-5">
           <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h1 class="mb-3">Наші фахівці</h1>
+                <h1 class="mb-3 fw-semibold">Наші фахівці</h1>
                 <p>Наша команда складається з фахівців найвищчого рівня</p>
             </div>
             <div class="row g-4">
