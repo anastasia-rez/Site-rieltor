@@ -1,12 +1,14 @@
 import {ref, reactive, computed} from 'vue';
 
 const mainData = reactive ({
+  // Найкращі варіанти
   products: [
     {
+      id: 1,
       photos: [
-        '../src/assets/img/apartament1.jpg',
-        '../src/assets/img/apartment2.jpg',
-        '../src/assets/img/apartment3.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Квартира',
@@ -19,10 +21,11 @@ const mainData = reactive ({
     },
 
     {
+      id: 2,
       photos: [
-        '../src/assets/img/apartment2.jpg',
-        '../src/assets/img/apartament1.jpg',
-        '../src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
       ],
       type: 'Купівля',
       type2: 'Квартира',
@@ -35,10 +38,11 @@ const mainData = reactive ({
     },
 
     {
+      id: 3,
       photos: [
-        '../src/assets/img/apartment3.jpg',
-        '../src/assets/img/apartment2.jpg',
-        '../src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
       ],
       type: 'Купівля',
       type2: 'Будинок',
@@ -51,10 +55,11 @@ const mainData = reactive ({
     },
 
     {
+      id: 4,
       photos: [
-        '../src/assets/img/apartment3.jpg',
-        '../src/assets/img/apartment2.jpg',
-        '../src/assets/img/apartment1.jpg',
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
       ],
       type: 'Купівля',
       type2: 'Офіс',
@@ -67,10 +72,11 @@ const mainData = reactive ({
     },
 
     {
+      id: 5,
       photos: [
-        '../src/assets/img/apartment2.jpg',
-        '../src/assets/img/apartament1.jpg',
-        '../src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Квартира',
@@ -83,10 +89,11 @@ const mainData = reactive ({
     },
 
     {
+      id: 6,
       photos: [
-        '../src/assets/img/apartament1.jpg',
-        '../src/assets/img/apartment2.jpg',
-        '../src/assets/img/apartment3.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
       ],
       type: 'Купівля',
       type2: 'Офіс',
@@ -103,6 +110,7 @@ const mainData = reactive ({
 
   title: 'Альянс Експерт',
 
+  // Працівники
   team : [
     {
       img: '../src/assets/img/team-1.jpg',
@@ -146,6 +154,7 @@ const mainData = reactive ({
 
   ],
 
+  // Відгуки
   reviews : [
     {
       img: '../src/assets/img/testimonial-1.jpg',
@@ -175,9 +184,1133 @@ const mainData = reactive ({
       review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi habitasse, fames ex ut penatibus eu aenean est quisque, urna id velit malesuada tristique primis nam magna. Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nun'
     }
 
-  ]
+  ],
 
- 
+
+  // Оренда квартир
+  rentApartments: [
+    {
+      id: 1,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Квартира',
+      price: '300$',
+      rooms: 3,
+      bathroom: 1,
+      area: '45м²',
+      location: 'Дніпро',
+      description: 'Квартира у центрі Дніпра з мальовничим видом на річку'
+    },
+
+    {
+      id: 2,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Квартира',
+      price: '30 000$',
+      rooms: 2,
+      bathroom: 1,
+      area: '45м²',
+      location: 'Київ',
+      description: 'Апартаменти на лівому березі Дніпра'
+    },
+
+    {
+      id: 3,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Будинок',
+      price: '39 000$',
+      rooms: 3,
+      bathroom: 2,
+      area: '54м²',
+      location: 'Дніпро',
+      description: 'Апартаменти на правому березі Дніпра'
+    },
+
+    {
+      id: 4,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 5,
+      area: '70м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 5,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Квартира',
+      price: '123 000$',
+      bathroom: 3,
+      rooms: 5,
+      area: '115м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 6,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 7,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 8,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 9,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 10,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 11,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Оренда',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    }
+
+  ],
+
+  // Купівля квартир 
+  sellApartments: [
+    {
+      id: 1,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '30 000$',
+      rooms: 3,
+      bathroom: 1,
+      area: '45м²',
+      location: 'Дніпро',
+      description: 'Квартира у центрі Дніпра з мальовничим видом на річку'
+    },
+
+    {
+      id: 2,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '30 000$',
+      rooms: 2,
+      bathroom: 1,
+      area: '45м²',
+      location: 'Київ',
+      description: 'Апартаменти на лівому березі Дніпра'
+    },
+
+    {
+      id: 3,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '39 000$',
+      rooms: 3,
+      bathroom: 2,
+      area: '54м²',
+      location: 'Дніпро',
+      description: 'Апартаменти на правому березі Дніпра'
+    },
+
+    {
+      id: 4,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 5,
+      area: '70м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 5,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '123 000$',
+      bathroom: 3,
+      rooms: 5,
+      area: '115м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 6,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 7,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 8,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 9,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 10,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+
+    {
+      id: 11,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Квартира',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    }
+
+  ],
+
+  // Оренда будинка
+  rentHouses: [
+  {
+    id: 1,
+    photos: [
+      './src/assets/img/apartament1.jpg',
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartment3.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '30 000$',
+    rooms: 3,
+    bathroom: 1,
+    area: '45м²',
+    location: 'Дніпро',
+    description: 'Квартира у центрі Дніпра з мальовничим видом на річку'
+  },
+
+  {
+    id: 2,
+    photos: [
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartament1.jpg',
+      './src/assets/img/apartment3.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '30 000$',
+    rooms: 2,
+    bathroom: 1,
+    area: '45м²',
+    location: 'Київ',
+    description: 'Апартаменти на лівому березі Дніпра'
+  },
+
+  {
+    id: 3,
+    photos: [
+      './src/assets/img/apartment3.jpg',
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartament1.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '39 000$',
+    rooms: 3,
+    bathroom: 2,
+    area: '54м²',
+    location: 'Дніпро',
+    description: 'Апартаменти на правому березі Дніпра'
+  },
+
+  {
+    id: 4,
+    photos: [
+      './src/assets/img/apartment3.jpg',
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartament1.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '70 000$',
+    bathroom: 1,
+    rooms: 5,
+    area: '70м²',
+    location: 'Київ',
+    description: 'Будинок на лівому березі Дніпра'
+  },
+
+  {
+    id: 5,
+    photos: [
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartament1.jpg',
+      './src/assets/img/apartment3.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '123 000$',
+    bathroom: 3,
+    rooms: 5,
+    area: '115м²',
+    location: 'Київ',
+    description: 'Будинок на лівому березі Дніпра'
+  },
+
+  {
+    id: 6,
+    photos: [
+      './src/assets/img/apartament1.jpg',
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartment3.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '70 000$',
+    bathroom: 1,
+    rooms: 3,
+    area: '80м²',
+    location: 'Дніпро',
+    description: 'Будинок на лівому березі Дніпра'
+  },
+
+  {
+    id: 7,
+    photos: [
+      './src/assets/img/apartament1.jpg',
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartment3.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '70 000$',
+    bathroom: 1,
+    rooms: 3,
+    area: '80м²',
+    location: 'Дніпро',
+    description: 'Будинок на лівому березі Дніпра'
+  },
+
+  {
+    id: 8,
+    photos: [
+      './src/assets/img/apartament1.jpg',
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartment3.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '70 000$',
+    bathroom: 1,
+    rooms: 3,
+    area: '80м²',
+    location: 'Дніпро',
+    description: 'Будинок на лівому березі Дніпра'
+  },
+
+  {
+    id: 9,
+    photos: [
+      './src/assets/img/apartament1.jpg',
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartment3.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '70 000$',
+    bathroom: 1,
+    rooms: 3,
+    area: '80м²',
+    location: 'Дніпро',
+    description: 'Будинок на лівому березі Дніпра'
+  },
+
+  {
+    id: 10,
+    photos: [
+      './src/assets/img/apartament1.jpg',
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartment3.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '70 000$',
+    bathroom: 1,
+    rooms: 3,
+    area: '80м²',
+    location: 'Дніпро',
+    description: 'Будинок на лівому березі Дніпра'
+  },
+
+  {
+    id: 11,
+    photos: [
+      './src/assets/img/apartament1.jpg',
+      './src/assets/img/apartment2.jpg',
+      './src/assets/img/apartment3.jpg',
+    ],
+    type: 'Оренда',
+    type2: 'Будинок',
+    price: '70 000$',
+    bathroom: 1,
+    rooms: 3,
+    area: '80м²',
+    location: 'Дніпро',
+    description: 'Будинок на лівому березі Дніпра'
+  }
+
+  ],
+
+  // Купівля будинка
+  sellHouses: [
+    {
+      id: 1,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '30 000$',
+      rooms: 3,
+      bathroom: 1,
+      area: '45м²',
+      location: 'Дніпро',
+      description: 'Квартира у центрі Дніпра з мальовничим видом на річку'
+    },
+  
+    {
+      id: 2,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '30 000$',
+      rooms: 2,
+      bathroom: 1,
+      area: '45м²',
+      location: 'Київ',
+      description: 'Апартаменти на лівому березі Дніпра'
+    },
+  
+    {
+      id: 3,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '39 000$',
+      rooms: 3,
+      bathroom: 2,
+      area: '54м²',
+      location: 'Дніпро',
+      description: 'Апартаменти на правому березі Дніпра'
+    },
+  
+    {
+      id: 4,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 5,
+      area: '70м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 5,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '123 000$',
+      bathroom: 3,
+      rooms: 5,
+      area: '115м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 6,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 7,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 8,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 9,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 10,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 11,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Будинок',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    }
+  
+  ],
+
+  // Земельні ділянки
+  landPlots: [
+    {
+      id: 1,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '30 000$',
+      area: '45м²',
+      location: 'Дніпро',
+      description: 'Квартира у центрі Дніпра з мальовничим видом на річку'
+    },
+  
+    {
+      id: 2,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '30 000$',
+      area: '45м²',
+      location: 'Київ',
+      description: 'Апартаменти на лівому березі Дніпра'
+    },
+  
+    {
+      id: 3,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '39 000$',
+      area: '54м²',
+      location: 'Дніпро',
+      description: 'Апартаменти на правому березі Дніпра'
+    },
+  
+    {
+      id: 4,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '70 000$',
+      area: '70м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 5,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '123 000$',
+      area: '115м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 6,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '70 000$',
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 7,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '70 000$',
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 8,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '70 000$',
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 9,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '70 000$',
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 10,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '70 000$',
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 11,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Земельна ділянка',
+      price: '70 000$',
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    }
+  
+  ],
+
+  // Офіси
+  offices: [
+    {
+      id: 1,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '30 000$',
+      rooms: 3,
+      bathroom: 1,
+      area: '45м²',
+      location: 'Дніпро',
+      description: 'Квартира у центрі Дніпра з мальовничим видом на річку'
+    },
+  
+    {
+      id: 2,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '30 000$',
+      rooms: 2,
+      bathroom: 1,
+      area: '45м²',
+      location: 'Київ',
+      description: 'Апартаменти на лівому березі Дніпра'
+    },
+  
+    {
+      id: 3,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '39 000$',
+      rooms: 3,
+      bathroom: 2,
+      area: '54м²',
+      location: 'Дніпро',
+      description: 'Апартаменти на правому березі Дніпра'
+    },
+  
+    {
+      id: 4,
+      photos: [
+        './src/assets/img/apartment3.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 5,
+      area: '70м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 5,
+      photos: [
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '123 000$',
+      bathroom: 3,
+      rooms: 5,
+      area: '115м²',
+      location: 'Київ',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 6,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 7,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 8,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 9,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 10,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    },
+  
+    {
+      id: 11,
+      photos: [
+        './src/assets/img/apartament1.jpg',
+        './src/assets/img/apartment2.jpg',
+        './src/assets/img/apartment3.jpg',
+      ],
+      type: 'Продаж',
+      type2: 'Офіс',
+      price: '70 000$',
+      bathroom: 1,
+      rooms: 3,
+      area: '80м²',
+      location: 'Дніпро',
+      description: 'Будинок на лівому березі Дніпра'
+    }
+  
+  ],
+
 });
 
 

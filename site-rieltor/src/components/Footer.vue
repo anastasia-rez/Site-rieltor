@@ -144,7 +144,7 @@ a {
 
 @media (max-width: 767px) {
 
-    img {
+    .img-fluid {
     height: 100px;
     width: 150px;
     object-fit: cover;

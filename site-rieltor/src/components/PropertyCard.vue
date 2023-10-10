@@ -36,51 +36,7 @@ const props = defineProps(['propertyCard']);
 
  
 
-<style scoped>
-.type{
-  background-color: rgb(68, 68, 205);
-}
 
-.text {
-  color: rgb(68, 68, 205);
-}
-
-.btn{
-  background-color: rgb(68, 68, 205);
-  height: 50px;
-  top: 50%
-}
-
-/* .nav-pills .nav-item .btn:hover,
-.nav-pills .nav-item .btn.active {
-    color: #FFFFFF;
-} */
-
-.property-item {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
-  height: 500px;
-}
-
-.property-item img {
-    transition: .5s;
-}
-
-.property-item:hover img {
-    transform: scale(1.1);
-}
-
-.property-item .border-top {
-    border-top: 1px dashed rgba(0, 185, 142, .3) !important;
-}
-
-.property-item .border-end {
-    border-right: 1px dashed rgba(0, 185, 142, .3) !important;
-}
-
-a {
-  text-decoration: none;
-}
-</style> 
 
 
 
@@ -143,3 +99,46 @@ const prevSlide = () => {
   currentIndex.value = (currentIndex.value - 1 + props.propertyCard.photos.length) % props.propertyCard.photos.length;
 };
 </script>
+
+
+<style scoped>
+.type{
+  background-color: rgb(68, 68, 205);
+}
+
+.text {
+  color: rgb(68, 68, 205);
+}
+
+.btn{
+  background-color: rgb(68, 68, 205);
+  height: 50px;
+  top: 50%
+}
+
+
+.property-item {
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+  height: 500px;
+}
+
+.property-item img {
+    transition: .5s;
+}
+
+.property-item:hover img {
+    transform: scale(1.1);
+}
+
+.property-item .border-top {
+    border-top: 1px dashed rgba(0, 185, 142, .3) !important;
+}
+
+.property-item .border-end {
+    border-right: 1px dashed rgba(0, 185, 142, .3) !important;
+}
+
+a {
+  text-decoration: none;
+}
+</style> 
