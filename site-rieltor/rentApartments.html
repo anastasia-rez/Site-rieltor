@@ -147,7 +147,7 @@
           mainData,
           currentIndex: [],
           photos: [],
-          visibleApartments: [], // Массив для отображаемых квартир
+          visibleApartments: [],
           batchSize: 6,
         };
       },
@@ -173,8 +173,6 @@
         handler() {
           this.photos = this.mainData.rentApartments.map((rentApartment) => rentApartment.photos);
           this.currentIndex = this.mainData.rentApartments.map(() => 0);
-
-          // При изменении данных обновляем видимые квартиры
           this.visibleApartments = this.mainData.rentApartments.slice(0, this.batchSize);
         },
       },

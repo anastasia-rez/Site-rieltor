@@ -38,7 +38,6 @@
   
   const selectedService = ref('');
   
-  // Функция для обработки нажатия на кнопку "Знайти"
   const search = () => {
     if (selectedService.value === 'rentApartments') {
       window.location.href = 'rentApartments.html';

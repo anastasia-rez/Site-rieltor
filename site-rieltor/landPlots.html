@@ -145,7 +145,7 @@
           mainData,
           currentIndex: [],
           photos: [],
-          visibleApartments: [], // Массив для отображаемых квартир
+          visibleApartments: [],
           batchSize: 6,
         };
       },
@@ -172,7 +172,6 @@
           this.photos = this.mainData.landPlots.map((landPlot) => landPlot.photos);
           this.currentIndex = this.mainData.landPlots.map(() => 0);
 
-          // При изменении данных обновляем видимые квартиры
           this.visibleApartments = this.mainData.landPlots.slice(0, this.batchSize);
         },
       },
