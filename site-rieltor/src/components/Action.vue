@@ -15,8 +15,6 @@
                             <div class="d-flex justify-content-evenly">
                                 <a href="tel:+380999999999" class="btn py-3 px-4"><i class="fa fa-phone-alt me-2"></i>Подзвонити</a>
                             </div>
-                            
-                            <!-- <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i></a> -->
                         </div>
                     </div>
                 </div>
@@ -26,11 +24,9 @@
 </template>
 
 <style scoped>
-
 .btn {
     background-color: rgb(68, 68, 205);
     color: white;
 }
-
 </style>
 

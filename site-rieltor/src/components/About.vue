@@ -8,12 +8,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="mb-4">Підберемо для Вас ідеальний варінт</h1>
+                    <h1 class="mb-4">Підберемо для Вас ідеальний варіант</h1>
                     <p class="mb-4">Наші фахівці приймають до уваги всі деталі Вашого запросу, щоб допомогти Вам</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Великий вибір пропозицій</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Профейсійні фахівці</p>
                     <p><i class="fa fa-check text-primary me-3"></i>Честність та бажання допомогти</p>
-                    <a class="btn py-3 px-5 mt-3" href="">Наш телеграм канал</a>
+                    <a class="btn py-3 px-5 mt-3" href="https://t.me/alianceexpert">Наш телеграм канал</a>
                 </div>
             </div>
         </div>
@@ -21,7 +21,6 @@
 </template>
 
 <style scoped>
-
 
 .about-img img {
     position: relative;

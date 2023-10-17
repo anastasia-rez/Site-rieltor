@@ -1,7 +1,6 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-
 const isSticky = ref(false);
 
 const handleScroll = () => {
@@ -16,7 +15,6 @@ const handleScroll = () => {
     window.removeEventListener('scroll', handleScroll);
 });
 
-// :style="{ marginTop: isSticky ? '45px' : '0' }"
 
 </script>
 
@@ -74,7 +72,6 @@ h1 {
 
 .nav-bar {
 position: relative;
-/* margin-top: 30px; */
 padding: 0 3rem;
 transition: 0.5s;
 z-index: 9999;
@@ -84,8 +81,8 @@ height: 45px;
 .nav-bar.sticky-top {
 position: sticky;
 top: 0;
-    left: 0;
-    right: 0;
+left: 0;
+right: 0;
 padding: 0;
 z-index: 9999;
 }
@@ -128,7 +125,6 @@ outline: none;
     display: inline-block;
     vertical-align: middle;
 }
-
 
 
 .nav-link::before,

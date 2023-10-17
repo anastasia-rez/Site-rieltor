@@ -19,7 +19,6 @@ const props = defineProps(['team']);
             <h5 class="fw-bold mb-0">{{ team.name }}</h5>
             <small>{{team.position}}</small>
             <div>
-                
                 <a :href="'tel:' + team.tel" class="text-dark link-underline link-underline-opacity-0">{{ team.tel }} <i class="fa fa-phone-alt p-3 "></i></a>
             </div>
             
@@ -47,8 +46,8 @@ const props = defineProps(['team']);
 
 
 .fa-phone-alt:hover {
-    transform: scale(1.6); /* Измените масштаб на ваш выбор */
-    transition: transform 0.3s ease-in-out; /* Добавьте плавный переход */
+    transform: scale(1.6); 
+    transition: transform 0.3s ease-in-out;
     color: rgb(68, 68, 205);
 }
 

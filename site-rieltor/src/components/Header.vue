@@ -2,7 +2,7 @@
 import Carousel from './Carousel.vue';
 
 const props = defineProps({
-  carouselItems: Array, // Объявляем ожидаемый тип для carouselItems
+  carouselItems: Array,
 });
 </script>
 
@@ -13,10 +13,9 @@ const props = defineProps({
       <div class="col-md-6 p-5 mt-lg-5">
         <h1 class="display-5 animated fadeIn mb-4 fw-bold">Шукайте <span class="text">ідеальне житло </span> своєї мрії</h1>
         <p class="animated fadeIn mb-4 pb-2 opacity-75">Наші професіонали допоможуть Вам у будь-якому питанні!</p>
-        <a href="" class="btn py-3 px-5 me-3 animated fadeIn text-light">Наш телеграм канал</a>
+        <a href="https://t.me/alianceexpert" class="btn py-3 px-5 me-3 animated fadeIn text-light">Наш телеграм канал</a>
       </div>
       <div class="col-md-6 animated fadeIn carousel-container">
-        <!-- <Carousel />  -->
         <Carousel :carouselItems="carouselItems" />
       </div>
     </div>
@@ -26,9 +25,7 @@ const props = defineProps({
 <style scoped>
 
 .text {
-  
   color: rgb(49, 49, 181);
-  
 }
 
 .btn {
@@ -47,11 +44,10 @@ const props = defineProps({
 }
 
 @media (max-width: 767px) {
-  /* Применяем стили для мобильной версии (ширина экрана менее 768px) */
   .carousel-container {
   height: 500px;
   margin: 0;
   object-fit: contain;
-}
+  }
 }
 </style>

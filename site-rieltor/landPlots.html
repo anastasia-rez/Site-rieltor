@@ -40,7 +40,10 @@
           </div>
     
           <div class="row g-4 mt-2">
-            <div v-for="(item, cardIndex) in visibleApartments" class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
+            <div v-if="visibleApartments.length === 0" class="col-12 text-center">
+              <h3><i class="fa-solid fa-face-frown pe-3 fa-xs"></i>Вибачте, наразі варіантів нема. Але ми вже в пошуках найкращіх пропозицій!</h3>
+            </div>
+            <div v-for="(item, cardIndex) in visibleApartments" :key="cardIndex" class="col-lg-4 col-md-6 wow fadeInUp mb-3" data-wow-delay="0.1s">
               <div class="property-item rounded overflow-hidden">
                 <div class="position-relative overflow-hidden">
                   <div id="carouselExample" class="carousel slide">
@@ -90,10 +93,10 @@
                     <h5 class="text-white mb-4">Про нас</h5>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Дніпро, Україна</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+380 66 000 00 00</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>alianceexpert1@gmail.com</p>
                       <a class="btn btn-link text-center text-white-50 p-1" href="/">Головна</a>
                     <div class="d-flex pt-3 justify-content-evenly">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://instagram.com/aliansekspert?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr "><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
@@ -104,16 +107,16 @@
                     <h5 class="text-white mb-4">Галерея</h5>
                     <div class="row g-2 pt-2">
                         <div class="col-4">
-                            <img class="img-fluid rounded bg-light p-1 " src="/src/assets/img/apartament1.jpg" alt="">
+                            <img class="img-fluid rounded bg-light p-1 " src="/src/assets/img/лучшиеварианты/apartament1.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid rounded bg-light p-1" src="/src/assets/img/apartment2.jpg" alt="">
+                            <img class="img-fluid rounded bg-light p-1" src="/src/assets/img/лучшиеварианты/apartment2.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid rounded bg-light p-1" src="/src/assets/img/apartment3.jpg" alt="">
+                            <img class="img-fluid rounded bg-light p-1" src="/src/assets/img/лучшиеварианты/apartment3.jpg" alt="">
                         </div>
                         <div class="col-4">
-                            <img class="img-fluid rounded bg-light p-1" src="/src/assets/img/apartment4.jpg" alt="">
+                            <img class="img-fluid rounded bg-light p-1" src="/src/assets/img/лучшиеварианты/apartment4.jpg" alt="">
                         </div>
                         <div class="col-4">
                             <img class="img-fluid rounded bg-light p-1" src="/src/assets/img/property-1.jpg" alt="">

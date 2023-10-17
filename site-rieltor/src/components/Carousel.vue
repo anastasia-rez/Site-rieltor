@@ -1,6 +1,4 @@
-
-
- <template>
+<template>
   <div id="carouselExample" class="carousel slide">
     <div class="carousel-inner">
       <div
@@ -33,7 +31,7 @@ import { ref, defineProps, onMounted, onUnmounted } from 'vue';
 const { carouselItems } = defineProps(['carouselItems']);
 
 const currentIndex = ref(0);
-let intervalId = null; // Переменная для хранения ID интервала
+let intervalId = null;
 
 const nextSlide = () => {
   currentIndex.value = (currentIndex.value + 1) % carouselItems.length;
@@ -50,12 +48,10 @@ const startAutoSlide = () => {
   }, 3000); // Интервал в миллисекундах (5 секунд)
 };
 
-// Запускаем автоматическую смену слайдов при монтировании компонента
 onMounted(() => {
   startAutoSlide();
 });
 
-// Останавливаем автоматическую смену слайдов при размонтировании компонента
 onUnmounted(() => {
   clearInterval(intervalId);
 });
@@ -87,7 +83,6 @@ onUnmounted(() => {
   height: 100%;
 }
 
-
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -109,30 +104,25 @@ onUnmounted(() => {
 }
 
 .btn {
-    transition: .3s;
-    width: 60px;
-    height: 60px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-    border-radius: 50px;
-    background: rgb(49, 49, 181);
-    opacity:60%;
+  transition: .3s;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+  border-radius: 50px;
+  background: rgb(49, 49, 181);
+  opacity:60%;
 }
 
 .btn:hover {
   opacity: 90%;
 }
 
-/* .carousel-inner {
-  transition: transform 1s ease; 
-} */
-
 
 @media (max-width: 767px) {
-  /* Применяем стили для мобильной версии (ширина экрана менее 768px) */
 
   .carousel {
     width: 100%; 
@@ -141,7 +131,7 @@ onUnmounted(() => {
 
   .carousel-inner img {
   height: 450px;
-  max-height: none; /* Отменяем максимальную высоту для мобильной версии */
+  max-height: none; 
   object-fit: contain;
   }
 

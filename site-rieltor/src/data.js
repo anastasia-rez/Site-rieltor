@@ -6,9 +6,9 @@ const mainData = reactive ({
     {
       id: 1,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Квартира',
@@ -23,9 +23,9 @@ const mainData = reactive ({
     {
       id: 2,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Купівля',
       type2: 'Квартира',
@@ -40,9 +40,9 @@ const mainData = reactive ({
     {
       id: 3,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Купівля',
       type2: 'Будинок',
@@ -57,9 +57,9 @@ const mainData = reactive ({
     {
       id: 4,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Купівля',
       type2: 'Офіс',
@@ -74,9 +74,9 @@ const mainData = reactive ({
     {
       id: 5,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Квартира',
@@ -91,9 +91,9 @@ const mainData = reactive ({
     {
       id: 6,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Купівля',
       type2: 'Офіс',
@@ -113,7 +113,7 @@ const mainData = reactive ({
   // Працівники
   team : [
     {
-      img: '../src/assets/img/team-1.jpg',
+      img: '../src/assets/img/сотрудники/team-1.jpg',
       name: 'Name',
       position: 'Realtor',
       tel: +380660000000,
@@ -123,7 +123,7 @@ const mainData = reactive ({
     }, 
 
     {
-      img: '../src/assets/img/team-2.jpg',
+      img: '../src/assets/img/сотрудники/team-2.jpg',
       name: 'Name',
       position: 'Realtor',
       tel: +380660000000,
@@ -133,7 +133,7 @@ const mainData = reactive ({
     }, 
 
     {
-      img: '../src/assets/img/team-3.jpg',
+      img: '../src/assets/img/сотрудники/team-3.jpg',
       name: 'Name',
       position: 'Realtor',
       tel: +380660000000,
@@ -143,7 +143,7 @@ const mainData = reactive ({
     }, 
 
     {
-      img: '../src/assets/img/team-4.jpg',
+      img: '../src/assets/img/сотрудники/team-4.jpg',
       name: 'Name1',
       position: 'Realtor',
       tel: +380660000000,
@@ -157,28 +157,28 @@ const mainData = reactive ({
   // Відгуки
   reviews : [
     {
-      img: '../src/assets/img/testimonial-1.jpg',
+      img: '../src/assets/img/отзывы/testimonial-1.jpg',
       name: 'Name',
       service: 'Продаж квартири',
       review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit penatibus fermentum, proin dapibus condimentum et a montes mattis dui. Integer lobortis tellus taciti facilisi nibhю.Lorem ipsum dolor sit amet consectetur adipiscing elit penatibus fermentum, proin dapibus condimentum et a montes mattis dui. Integer lobortis tellus taciti facilisi nibhю.'
     },
 
     {
-      img: '../src/assets/img/testimonial-2.jpg',
+      img: '../src/assets/img/отзывы/testimonial-2.jpg',
       name: 'Name1',
       service: 'Купівля квартири',
       review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nunc habitant vivamus, hendrerit enim condimentum dictumst nisi cubilia tincidunt.'
     },
 
     {
-      img: '../src/assets/img/testimonial-3.jpg',
+      img: '../src/assets/img/отзывы/testimonial-3.jpg',
       name: 'Name2',
       service: 'Аренда квартири',
       review: 'Lorem ipsum dolor sit amet consectetur, adipiscing elit viverra ridiculus, eros nunc quam commodo. Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nun'
     },
 
     {
-      img: '../src/assets/img/testimonial-4.jpg',
+      img: '../src/assets/img/отзывы/testimonial-4.jpg',
       name: 'Name3',
       service: 'Аренда квартири',
       review: 'Lorem ipsum dolor sit amet consectetur adipiscing elit facilisi habitasse, fames ex ut penatibus eu aenean est quisque, urna id velit malesuada tristique primis nam magna. Lorem ipsum dolor sit amet consectetur adipiscing elit diam, nam natoque phasellus maximus quis cras nun'
@@ -192,9 +192,9 @@ const mainData = reactive ({
     {
       id: 1,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Квартира',
@@ -209,9 +209,9 @@ const mainData = reactive ({
     {
       id: 2,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Квартира',
@@ -226,9 +226,9 @@ const mainData = reactive ({
     {
       id: 3,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Будинок',
@@ -243,9 +243,9 @@ const mainData = reactive ({
     {
       id: 4,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Офіс',
@@ -260,9 +260,9 @@ const mainData = reactive ({
     {
       id: 5,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Квартира',
@@ -277,9 +277,9 @@ const mainData = reactive ({
     {
       id: 6,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Офіс',
@@ -294,9 +294,9 @@ const mainData = reactive ({
     {
       id: 7,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Офіс',
@@ -311,9 +311,9 @@ const mainData = reactive ({
     {
       id: 8,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Офіс',
@@ -328,9 +328,9 @@ const mainData = reactive ({
     {
       id: 9,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Офіс',
@@ -345,9 +345,9 @@ const mainData = reactive ({
     {
       id: 10,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Офіс',
@@ -362,9 +362,9 @@ const mainData = reactive ({
     {
       id: 11,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Оренда',
       type2: 'Офіс',
@@ -383,9 +383,9 @@ const mainData = reactive ({
     {
       id: 1,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -400,9 +400,9 @@ const mainData = reactive ({
     {
       id: 2,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -417,9 +417,9 @@ const mainData = reactive ({
     {
       id: 3,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -434,9 +434,9 @@ const mainData = reactive ({
     {
       id: 4,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -451,9 +451,9 @@ const mainData = reactive ({
     {
       id: 5,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -468,9 +468,9 @@ const mainData = reactive ({
     {
       id: 6,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -485,9 +485,9 @@ const mainData = reactive ({
     {
       id: 7,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -502,9 +502,9 @@ const mainData = reactive ({
     {
       id: 8,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -519,9 +519,9 @@ const mainData = reactive ({
     {
       id: 9,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -536,9 +536,9 @@ const mainData = reactive ({
     {
       id: 10,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -553,9 +553,9 @@ const mainData = reactive ({
     {
       id: 11,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Квартира',
@@ -574,9 +574,9 @@ const mainData = reactive ({
   {
     id: 1,
     photos: [
-      './src/assets/img/apartament1.jpg',
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartment3.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -591,9 +591,9 @@ const mainData = reactive ({
   {
     id: 2,
     photos: [
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartament1.jpg',
-      './src/assets/img/apartment3.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -608,9 +608,9 @@ const mainData = reactive ({
   {
     id: 3,
     photos: [
-      './src/assets/img/apartment3.jpg',
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -625,9 +625,9 @@ const mainData = reactive ({
   {
     id: 4,
     photos: [
-      './src/assets/img/apartment3.jpg',
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -642,9 +642,9 @@ const mainData = reactive ({
   {
     id: 5,
     photos: [
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartament1.jpg',
-      './src/assets/img/apartment3.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -659,9 +659,9 @@ const mainData = reactive ({
   {
     id: 6,
     photos: [
-      './src/assets/img/apartament1.jpg',
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartment3.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -676,9 +676,9 @@ const mainData = reactive ({
   {
     id: 7,
     photos: [
-      './src/assets/img/apartament1.jpg',
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartment3.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -693,9 +693,9 @@ const mainData = reactive ({
   {
     id: 8,
     photos: [
-      './src/assets/img/apartament1.jpg',
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartment3.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -710,9 +710,9 @@ const mainData = reactive ({
   {
     id: 9,
     photos: [
-      './src/assets/img/apartament1.jpg',
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartment3.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -727,9 +727,9 @@ const mainData = reactive ({
   {
     id: 10,
     photos: [
-      './src/assets/img/apartament1.jpg',
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartment3.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -744,9 +744,9 @@ const mainData = reactive ({
   {
     id: 11,
     photos: [
-      './src/assets/img/apartament1.jpg',
-      './src/assets/img/apartment2.jpg',
-      './src/assets/img/apartment3.jpg',
+      './src/assets/img/лучшиеварианты/apartament1.jpg',
+      './src/assets/img/лучшиеварианты/apartment2.jpg',
+      './src/assets/img/лучшиеварианты/apartment3.jpg',
     ],
     type: 'Оренда',
     type2: 'Будинок',
@@ -765,9 +765,9 @@ const mainData = reactive ({
     {
       id: 1,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -782,9 +782,9 @@ const mainData = reactive ({
     {
       id: 2,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -799,9 +799,9 @@ const mainData = reactive ({
     {
       id: 3,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -816,9 +816,9 @@ const mainData = reactive ({
     {
       id: 4,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -833,9 +833,9 @@ const mainData = reactive ({
     {
       id: 5,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -850,9 +850,9 @@ const mainData = reactive ({
     {
       id: 6,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -867,9 +867,9 @@ const mainData = reactive ({
     {
       id: 7,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -884,9 +884,9 @@ const mainData = reactive ({
     {
       id: 8,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -901,9 +901,9 @@ const mainData = reactive ({
     {
       id: 9,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -918,9 +918,9 @@ const mainData = reactive ({
     {
       id: 10,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -935,9 +935,9 @@ const mainData = reactive ({
     {
       id: 11,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Будинок',
@@ -956,9 +956,9 @@ const mainData = reactive ({
     {
       id: 1,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -971,9 +971,9 @@ const mainData = reactive ({
     {
       id: 2,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -986,9 +986,9 @@ const mainData = reactive ({
     {
       id: 3,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -1001,9 +1001,9 @@ const mainData = reactive ({
     {
       id: 4,
       photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -1016,9 +1016,9 @@ const mainData = reactive ({
     {
       id: 5,
       photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -1031,9 +1031,9 @@ const mainData = reactive ({
     {
       id: 6,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -1046,9 +1046,9 @@ const mainData = reactive ({
     {
       id: 7,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -1061,9 +1061,9 @@ const mainData = reactive ({
     {
       id: 8,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -1076,9 +1076,9 @@ const mainData = reactive ({
     {
       id: 9,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -1091,9 +1091,9 @@ const mainData = reactive ({
     {
       id: 10,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -1106,9 +1106,9 @@ const mainData = reactive ({
     {
       id: 11,
       photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
+        './src/assets/img/лучшиеварианты/apartament1.jpg',
+        './src/assets/img/лучшиеварианты/apartment2.jpg',
+        './src/assets/img/лучшиеварианты/apartment3.jpg',
       ],
       type: 'Продаж',
       type2: 'Земельна ділянка',
@@ -1122,192 +1122,192 @@ const mainData = reactive ({
 
   // Офіси
   offices: [
-    {
-      id: 1,
-      photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '30 000$',
-      rooms: 3,
-      bathroom: 1,
-      area: '45м²',
-      location: 'Дніпро',
-      description: 'Квартира у центрі Дніпра з мальовничим видом на річку'
-    },
+    // {
+    //   id: 1,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '30 000$',
+    //   rooms: 3,
+    //   bathroom: 1,
+    //   area: '45м²',
+    //   location: 'Дніпро',
+    //   description: 'Квартира у центрі Дніпра з мальовничим видом на річку'
+    // },
   
-    {
-      id: 2,
-      photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '30 000$',
-      rooms: 2,
-      bathroom: 1,
-      area: '45м²',
-      location: 'Київ',
-      description: 'Апартаменти на лівому березі Дніпра'
-    },
+    // {
+    //   id: 2,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '30 000$',
+    //   rooms: 2,
+    //   bathroom: 1,
+    //   area: '45м²',
+    //   location: 'Київ',
+    //   description: 'Апартаменти на лівому березі Дніпра'
+    // },
   
-    {
-      id: 3,
-      photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '39 000$',
-      rooms: 3,
-      bathroom: 2,
-      area: '54м²',
-      location: 'Дніпро',
-      description: 'Апартаменти на правому березі Дніпра'
-    },
+    // {
+    //   id: 3,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '39 000$',
+    //   rooms: 3,
+    //   bathroom: 2,
+    //   area: '54м²',
+    //   location: 'Дніпро',
+    //   description: 'Апартаменти на правому березі Дніпра'
+    // },
   
-    {
-      id: 4,
-      photos: [
-        './src/assets/img/apartment3.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '70 000$',
-      bathroom: 1,
-      rooms: 5,
-      area: '70м²',
-      location: 'Київ',
-      description: 'Будинок на лівому березі Дніпра'
-    },
+    // {
+    //   id: 4,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '70 000$',
+    //   bathroom: 1,
+    //   rooms: 5,
+    //   area: '70м²',
+    //   location: 'Київ',
+    //   description: 'Будинок на лівому березі Дніпра'
+    // },
   
-    {
-      id: 5,
-      photos: [
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment3.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '123 000$',
-      bathroom: 3,
-      rooms: 5,
-      area: '115м²',
-      location: 'Київ',
-      description: 'Будинок на лівому березі Дніпра'
-    },
+    // {
+    //   id: 5,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '123 000$',
+    //   bathroom: 3,
+    //   rooms: 5,
+    //   area: '115м²',
+    //   location: 'Київ',
+    //   description: 'Будинок на лівому березі Дніпра'
+    // },
   
-    {
-      id: 6,
-      photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '70 000$',
-      bathroom: 1,
-      rooms: 3,
-      area: '80м²',
-      location: 'Дніпро',
-      description: 'Будинок на лівому березі Дніпра'
-    },
+    // {
+    //   id: 6,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '70 000$',
+    //   bathroom: 1,
+    //   rooms: 3,
+    //   area: '80м²',
+    //   location: 'Дніпро',
+    //   description: 'Будинок на лівому березі Дніпра'
+    // },
   
-    {
-      id: 7,
-      photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '70 000$',
-      bathroom: 1,
-      rooms: 3,
-      area: '80м²',
-      location: 'Дніпро',
-      description: 'Будинок на лівому березі Дніпра'
-    },
+    // {
+    //   id: 7,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '70 000$',
+    //   bathroom: 1,
+    //   rooms: 3,
+    //   area: '80м²',
+    //   location: 'Дніпро',
+    //   description: 'Будинок на лівому березі Дніпра'
+    // },
   
-    {
-      id: 8,
-      photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '70 000$',
-      bathroom: 1,
-      rooms: 3,
-      area: '80м²',
-      location: 'Дніпро',
-      description: 'Будинок на лівому березі Дніпра'
-    },
+    // {
+    //   id: 8,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '70 000$',
+    //   bathroom: 1,
+    //   rooms: 3,
+    //   area: '80м²',
+    //   location: 'Дніпро',
+    //   description: 'Будинок на лівому березі Дніпра'
+    // },
   
-    {
-      id: 9,
-      photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '70 000$',
-      bathroom: 1,
-      rooms: 3,
-      area: '80м²',
-      location: 'Дніпро',
-      description: 'Будинок на лівому березі Дніпра'
-    },
+    // {
+    //   id: 9,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '70 000$',
+    //   bathroom: 1,
+    //   rooms: 3,
+    //   area: '80м²',
+    //   location: 'Дніпро',
+    //   description: 'Будинок на лівому березі Дніпра'
+    // },
   
-    {
-      id: 10,
-      photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '70 000$',
-      bathroom: 1,
-      rooms: 3,
-      area: '80м²',
-      location: 'Дніпро',
-      description: 'Будинок на лівому березі Дніпра'
-    },
+    // {
+    //   id: 10,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '70 000$',
+    //   bathroom: 1,
+    //   rooms: 3,
+    //   area: '80м²',
+    //   location: 'Дніпро',
+    //   description: 'Будинок на лівому березі Дніпра'
+    // },
   
-    {
-      id: 11,
-      photos: [
-        './src/assets/img/apartament1.jpg',
-        './src/assets/img/apartment2.jpg',
-        './src/assets/img/apartment3.jpg',
-      ],
-      type: 'Продаж',
-      type2: 'Офіс',
-      price: '70 000$',
-      bathroom: 1,
-      rooms: 3,
-      area: '80м²',
-      location: 'Дніпро',
-      description: 'Будинок на лівому березі Дніпра'
-    }
+    // {
+    //   id: 11,
+    //   photos: [
+    //     './src/assets/img/лучшиеварианты/apartament1.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment2.jpg',
+    //     './src/assets/img/лучшиеварианты/apartment3.jpg',
+    //   ],
+    //   type: 'Продаж',
+    //   type2: 'Офіс',
+    //   price: '70 000$',
+    //   bathroom: 1,
+    //   rooms: 3,
+    //   area: '80м²',
+    //   location: 'Дніпро',
+    //   description: 'Будинок на лівому березі Дніпра'
+    // }
   
   ],
 
