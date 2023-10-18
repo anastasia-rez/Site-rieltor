@@ -23,7 +23,7 @@ const handleScroll = () => {
          <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
             <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
                 <div class="icon p-2 me-2">
-                    <img class="img-fluid" src="/src/assets/img/logo1.PNG" alt="Icon" style="width: 150px; height: auto;">
+                    <img class="img-fluid" src="/src/assets/img/logo1.PNG" alt="Icon">
                 </div>
                 <h1 class="m-0 fw-bold">Альянс Експерт</h1>
             </a>
@@ -75,7 +75,7 @@ position: relative;
 padding: 0 3rem;
 transition: 0.5s;
 z-index: 9999;
-height: 45px;
+height: 75px;
 }
 
 .nav-bar.sticky-top {
@@ -109,7 +109,7 @@ transform: rotate(-180deg);
 margin-right: 30px;
 padding: 25px 0;
 color: #FFFFFF;
-font-size: 15px;
+font-size: 17px;
 text-transform: uppercase;
 outline: none;
 }
@@ -160,6 +160,13 @@ outline: none;
     opacity: 1;
 }
 
+.img-fluid{
+    width: 130px;
+    height: auto;
+    margin-top: 25px;
+}
+
+
 @media (max-width: 991.98px) {
 .nav-bar {
     margin: 0;
@@ -177,7 +184,7 @@ outline: none;
 }
 
 .navbar-light .navbar-brand {
-height: 75px;
+height: 130px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -186,24 +193,30 @@ font-weight: 500;
 }
 
 
-@media (min-width: 992px) {
-.navbar .nav-item .dropdown-menu {
-    display: block;
-    top: 100%;
-    margin-top: 0;
-    transform: rotateX(-75deg);
-    transform-origin: 0% 0%;
-    opacity: 0;
-    visibility: hidden;
-    transition: .5s;
-    
-}
 
-.navbar .nav-item:hover .dropdown-menu {
-    transform: rotateX(0deg);
-    visibility: visible;
-    transition: .5s;
-    opacity: 1;
-}
+@media (max-width: 767px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        top: 100%;
+        margin-top: 0;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+        
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transform: rotateX(0deg);
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+
+    .img-fluid {
+        width: 70px;
+        margin-top: auto;
+    }
 }
 </style> 
