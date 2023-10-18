@@ -87,7 +87,7 @@ import Footer from './components/Footer.vue';
         </div>
 
         <!-- Reviews end -->
-ytdhdtyjdty
+
 
         <!-- Team Start -->
 
