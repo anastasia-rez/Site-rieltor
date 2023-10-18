@@ -17,7 +17,7 @@ const mainData = reactive ({
       bathroom: 1,
       area: '45м²',
       location: 'Дніпро',
-      description: 'Квартира у центрі Дніпра з мальовничим видом на річку'
+      description: 'Квартира у центрі Дніпра з мальовничим видом на центр города'
     },
 
     {
