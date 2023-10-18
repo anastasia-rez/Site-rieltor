@@ -11,4 +11,13 @@ export default defineConfig({
       '@': '/src', // Этот алиас указывает на корневую директорию src
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        entryFileNames: "[name].html", // Это включит другие HTML-файлы
+        chunkFileNames: "assets/[name].[hash].js",
+        assetFileNames: "assets/[name].[hash][extname]",
+      },
+    },
+  },
 });
