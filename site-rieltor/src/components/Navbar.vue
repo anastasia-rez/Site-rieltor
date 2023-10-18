@@ -23,7 +23,7 @@ const handleScroll = () => {
          <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
             <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
                 <div class="icon p-2 me-2">
-                    <img class="img-fluid" src="/src/assets/img/logo1.PNG" alt="Icon">
+                    <img class="img-fluid" src="/src/assets/img/logo1.gif" alt="Icon">
                 </div>
                 <h1 class="m-0 fw-bold">Альянс Експерт</h1>
             </a>
