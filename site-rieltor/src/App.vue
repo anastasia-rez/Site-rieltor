@@ -49,7 +49,7 @@ import Footer from './components/Footer.vue';
 
         <About></About>
 
-        <!-- Property List Start -->
+        <!-- Property List Start --> 
 
         <div class="container-xxl py-5">
           <div class="container">
@@ -69,7 +69,8 @@ import Footer from './components/Footer.vue';
 
         <!-- Property List End -->
 
-        <Category></Category>
+        <Category></Category> 
+        
 
         <Action></Action>
 
