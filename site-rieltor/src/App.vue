@@ -56,7 +56,7 @@ import Footer from './components/Footer.vue';
             <div class="row g-0 gx-5 align-items-center">
               <div>
                 <div class="text-center mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                  <h1 class="mb-3">Наші найкращі вgjmkgkjhkаріанти</h1>
+                  <h1 class="mb-3">Наші найкращі варіанти</h1>
                   <p>Оберіть варіант, який вам сподобався та зв'яжіться з нашими фахівцями</p>
                 </div>
               </div>
