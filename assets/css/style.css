@@ -1,5 +1,4 @@
 
-
 .container-main {
     background-color: rgb(190, 190, 223, 0.2);
     font-family: 'Inter', sans-serif;
@@ -97,7 +96,7 @@ bottom: calc(80% + 10px);
 
 .btn-nav:hover::before, .btn-nav:hover::after {
 width: 100%;
-opacity: 1; /* Делаем линии видимыми при наведении */
+opacity: 1; 
 }
 
 .footer .btn.btn-social {
@@ -202,6 +201,6 @@ top: 50%;
     margin: auto;
     font-size: 15px;
     margin-bottom: 15px;
-}
+    }
 
 }

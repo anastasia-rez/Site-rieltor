@@ -208,7 +208,7 @@
         const cardData = data[i];
         const card = createCardElement(cardData, i);
         container.appendChild(card);
-        addCarouselEventListenersToCard(card, i); // Передаем карточку и индекс
+        addCarouselEventListenersToCard(card, i);
       }
     }
 
@@ -225,7 +225,7 @@
         const cardData = dataProperty[i];
         const card = createCardElement(cardData, cardCounter);
         document.getElementById('app').appendChild(card);
-        addCarouselEventListenersToCard(card, cardCounter); // Передаем карточку и индекс
+        addCarouselEventListenersToCard(card, cardCounter);
         cardCounter++;
       }
 
@@ -259,23 +259,17 @@
   const appContainer = document.getElementById('app');
   const noResultsMessage = document.getElementById('noResultsMessage');
 
-  // Проверяем количество объектов в массиве данных
   if (dataProperty.length === 0) {
-    // Если массив пустой, показываем сообщение и скрываем кнопку "Завантажити ще"
     noResultsMessage.style.display = 'block';
     appContainer.style.display = 'none';
     loadMoreButton.style.display = 'none';
   } else {
-    // Если есть объекты в массиве
     if (dataProperty.length > batchSize) {
-      // Если количество объектов больше заданного batchSize, то отображаем кнопку "Завантажити ще"
       loadMoreButton.style.display = 'block';
     } else {
-      // Иначе скрываем кнопку "Завантажити ще"
       loadMoreButton.style.display = 'none';
     }
 
-    // Загружаем начальные карточки и устанавливаем слушатели событий
     loadInitialCards(dataProperty, appContainer, batchSize);
 
     for (let i = 0; i < batchSize && i < dataProperty.length; i++) {
